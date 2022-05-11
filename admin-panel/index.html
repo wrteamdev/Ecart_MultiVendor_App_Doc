@@ -12,8 +12,7 @@
     <link href="assets/css/theDocs.all.min.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet'
-        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet' type='text/css'>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="../apple-touch-icon.html">
     <link rel="icon" href="assets/img/logo_ecart.png">
@@ -26,8 +25,7 @@
             <div class="container">
                 <!-- Toggle buttons and brand -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="true" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
                         <span class="glyphicon glyphicon-option-vertical"></span>
                     </button>
                     <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
@@ -35,8 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo_ecart.png" alt="logo"
-                            align="center" style="max-height: 120px;"></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo_ecart.png" alt="logo" align="center" style="max-height: 120px;"></a>
                 </div>
                 <!-- END Toggle buttons and brand -->
                 <!-- Top navbar -->
@@ -163,25 +160,20 @@
                     <p id="title"></p>
                     <h3 id="installation"> Step 1. How to Configure Database & Back-end on Your Server?</h3>
                     <ol>
-                        <li>First of all find the <b>eCart - Multivendors</b> folder from the PHP code folder from the
-                            downloaded package and upload to your server.</li>
+                        <li>First of all find the <b>eCart - Multivendors</b> folder from the PHP code folder from the downloaded package and upload to your server.</li>
                         <li>Create a new database from cPanel</li>
                         <li>Create new user for the database & give all the privileges to the user</li>
-                        <li>Import the database file 'eCart - Multivendors - blank.sql' to your PHPMYADMIN and follow
-                            steps shown <a href="#db">here</a>.</li>
+                        <li>Import the database file 'eCart - Multivendors - blank.sql' to your PHPMYADMIN and follow steps shown <a href="#db">here</a>.</li>
                         <li>Open File Manager or FTP or File Explorer</li>
                         <li>Go To <code>'includes/'</code> directory and Open <code>'crud.php'</code> file in PHP Code
-                        <li>set <b>'DOMAIN_URL'</b> to your admin panel URL like this >> <br>
-                            <b>'https://myapppanel.com/'</b> or <b>'https://myapppanel.com/admin/'</b> or
-                            <b>'https://admin.myapppanel.com/'</b> on line number - 8 <br>
-                            <code>define('DOMAIN_URL','https://myapppanel.com/');</code>
-                        </li>
-                        <b>Note : </b>Especially don't forget to add <b>' forward slash '</b> at the end of the domain
-                        URL like this <code>'/'</code></li>
+                            <li>set <b>'DOMAIN_URL'</b> to your admin panel URL like this >> <br>
+                                <b>'https://myapppanel.com/'</b> or <b>'https://myapppanel.com/admin/'</b> or
+                                <b>'https://admin.myapppanel.com/'</b> on line number - 8 <br>
+                                <code>define('DOMAIN_URL','https://myapppanel.com/');</code>
+                            </li>
+                            <b>Note : </b>Especially don't forget to add <b>' forward slash '</b> at the end of the domain URL like this <code>'/'</code></li>
                         <li>Set database credentials with your credentials on line number - 17,18,19,20 <br>
-                            <blockquote>private $db_host = "localhost"; // Change as required<br> private $db_user =
-                                "mydb_user"; // Change as required<br> private $db_pass = "mydb_user_password"; //
-                                Change as required<br> private $db_name = "myquizpanel_db"; //
+                            <blockquote>private $db_host = "localhost"; // Change as required<br> private $db_user = "mydb_user"; // Change as required<br> private $db_pass = "mydb_user_password"; // Change as required<br> private $db_name = "myquizpanel_db"; //
                                 Change as required</blockquote>
                         </li>
                     </ol>
@@ -192,8 +184,7 @@
 
                     <h3 id="db">Step 2:Dealing with the database</h3>
                     <ul>
-                        <li>Go to phpmyadmin : Open url:http://localhost/phpmyadmin for localhost or
-                            yourserver.com/phpmyadmin for live server in the browser.</li>
+                        <li>Go to phpmyadmin : Open url:http://localhost/phpmyadmin for localhost or yourserver.com/phpmyadmin for live server in the browser.</li>
                     </ul>
                     <div class="row">
                         <div class="col-md-4">
@@ -209,8 +200,7 @@
                                 <img class="bordered" src="assets/img/create_db.png" alt="sample3">
                                 <p>Sample image</p>
                                 <p>
-                                    <li style="color:#d34646;">Give the required name in the field and then click on
-                                        create </li>
+                                    <li style="color:#d34646;">Give the required name in the field and then click on create </li>
                                 </p>
                             </div>
                             <ul>
@@ -246,8 +236,7 @@
                             <div class="promo">
                                 <img class="bordered" src="assets/img/field_db.png" alt="sample3">
                                 <p>Sample image</p>
-                                <li style="color:#d34646;">As you can see all the fields of database are imported
-                                    successfully
+                                <li style="color:#d34646;">As you can see all the fields of database are imported successfully
                                 </li>
                             </div>
                         </div>
@@ -263,15 +252,13 @@
                     <h3 id="db2">Set your jwt secret key for extra layer of security.</h3>
                     <ul>
                         <li style="color:#d34646;" type="">
-                            JWT secret key is just like password & You can create your own.It should be same in eCart
-                            app, delivery boy app,as well as php side
+                            JWT secret key is just like password & You can create your own.It should be same in eCart app, delivery boy app,as well as php side
                         </li>
                     </ul>
                     <ol>
                         <li style="color:#d34646;" type="">Goto includes/crud.php file.</li>
                         <li style="color:#d34646;" type="">You can see jwt_secret_key as per image below.</li>
-                        <li style="color:#d34646;" type="">Replace 'replace_with_your_strong_jwt_secret_key' with your
-                            values.That's all</li>
+                        <li style="color:#d34646;" type="">Replace 'replace_with_your_strong_jwt_secret_key' with your values.That's all</li>
                         <div class="promo">
                             <img class="bordered" src="assets/img/jwt.png" alt="sample Image">
                             <p>Sample image</p>
@@ -283,10 +270,8 @@
                     <h3 id="db2">Set your package name for app and product sharing feature.</h3>
                     <!--<p style="color:red">Note : It will work only if your domain protocol is https</p>-->
                     <ol>
-                        <li style="color:#d34646;" type="">Goto .htaccess in root directory (if .htaccess file is not
-                            visible find and turn on show hidden files in your cPanel).</li>
-                        <li style="color:#d34646;" type="">You can see your.package.name as per image below replace it
-                            with your package name that's all.</li>
+                        <li style="color:#d34646;" type="">Goto .htaccess in root directory (if .htaccess file is not visible find and turn on show hidden files in your cPanel).</li>
+                        <li style="color:#d34646;" type="">You can see your.package.name as per image below replace it with your package name that's all.</li>
                     </ol>
 
                     <div class="promo">
@@ -313,9 +298,7 @@
                     <!-- start auto update -->
                     <h1 id="update">Auto Update</h1>
                     <h3>How to auto update your admin panel to latest version?</h3>
-                    <div class="alert alert-warning"><b>Note</b> : If you are upgrading your from very old version then
-                        please update the system in sequence. Don't skip any verion. <br>And in includes/crud.php file
-                        check for this line &gt;&gt; define('ALLOW_MODIFICATION', 1); &lt;&lt;
+                    <div class="alert alert-warning"><b>Note</b> : If you are upgrading your from very old version then please update the system in sequence. Don't skip any verion. <br>And in includes/crud.php file check for this line &gt;&gt; define('ALLOW_MODIFICATION', 1); &lt;&lt;
                         if you don't find it add it under DOMAIN_URL </div>
                     <ol>
                         <li>Find <b>update.zip</b> file from downloded PHP source code.</li>
@@ -374,27 +357,22 @@
                 </section>
                 <section>
                     <h2 id="shiprocket">Shiprocket</h2>
-                    Shiprocket, a product of Delhi based BigFoot Retail solution, is India's first automated shipping
-                    software that aims reduce ecommerce shipping to its bare bones. ... You can print bulk shipping
-                    labels and ship your products to in and around the world
+                    Shiprocket, a product of Delhi based BigFoot Retail solution, is India's first automated shipping software that aims reduce ecommerce shipping to its bare bones. ... You can print bulk shipping labels and ship your products to in and around the world
                     using a single platform.
                 </section>
                 <section>
                     <h2 id="shiprocket_account">Account</h2>
-                    First Create account on shiprockdet <a href="https://app.shiprocket.in/register"
-                        target="_blank">Click here</a>
+                    First Create account on shiprockdet <a href="https://app.shiprocket.in/register" target="_blank">Click here</a>
                     <img class="bordered" src="assets/img/create-account.png" width="100%" alt="sample3">
                 </section>
                 <section>
                     <h2 id="recharge_wallet">Recharge Wallet</h2>
-                    after successfully login you have to recharge you shiprocket wallet withou wallet balance you can
-                    use their services
+                    after successfully login you have to recharge you shiprocket wallet withou wallet balance you can use their services
                     <img class="bordered" src="assets/img/recharge-wallet.png" width="100%" alt="sample3">
                 </section>
                 <section>
                     <h2 id="API_config">API Config</h2>
-                    So now use shiprocket for first go to api Config from <a
-                        href="https://app.shiprocket.in/api-user">here</a> also you can go
+                    So now use shiprocket for first go to api Config from <a href="https://app.shiprocket.in/api-user">here</a> also you can go
                     <img class="bordered" src="assets/img/api-config.png" width="100%" alt="sample3">
                     <br><br>
                     <img class="bordered" src="assets/img/api-page.png" width="100%" alt="sample3">
@@ -402,8 +380,7 @@
                     <br><br> here you have to create user for use shiprockdet in your system:
                     <img class="bordered" src="assets/img/create-user-shiprocket.png" width="100%" alt="sample3">
                     <br><br> After create user you have to add use credentials in you admin panel here
-                    <img class="bordered" src="assets/img/add-email-password-in-admin-panel.png" width="100%"
-                        alt="sample3">
+                    <img class="bordered" src="assets/img/add-email-password-in-admin-panel.png" width="100%" alt="sample3">
                 </section>
                 <section>
                     <h2 id="how_will_work">How will work?</h2>
@@ -414,44 +391,35 @@
                     shiprocket use pickup location for pickup orders from owner:
                     <br><br> in your system only seller can add pickup location, here seller can add pickup location.
                     <img class="bordered" src="assets/img/add-pickup-location.png" width="100%" alt="sample3">
-                    <br><br> after adding pickup location admin have to verifed pickup location from panel and also from
-                    shiprocket panel
+                    <br><br> after adding pickup location admin have to verifed pickup location from panel and also from shiprocket panel
 
                     <br> verify pickup location from admin panel
-                    <img class="bordered" src="assets/img/verifed-pickup-location-from-admin-panel.png" width="100%"
-                        alt="sample3">
+                    <img class="bordered" src="assets/img/verifed-pickup-location-from-admin-panel.png" width="100%" alt="sample3">
                     <br> verify pickup location from shiprocket :
-                    <img class="bordered" src="assets/img/go-to-pickup-location-page-shiprocket-page.png" width="100%"
-                        alt="sample3">
+                    <img class="bordered" src="assets/img/go-to-pickup-location-page-shiprocket-page.png" width="100%" alt="sample3">
                     <br> here you can edit or verify pickup location
-                    <img class="bordered" src="assets/img/verifed-pickup-location-from-shiprocket.png" width="100%"
-                        alt="sample3">
+                    <img class="bordered" src="assets/img/verifed-pickup-location-from-shiprocket.png" width="100%" alt="sample3">
 
 
                     <br><br>
                     <h3>Add product or Edit product</h3>
                     after successfully verify pickup location you can add product like this
                     <img class="bordered" src="assets/img/add-product.png" width="100%" alt="sample3">
-                    <br>also you can edit product like This<img class="bordered" src="assets/img/edit-product.png"
-                        width="100%" alt="sample3">
+                    <br>also you can edit product like This<img class="bordered" src="assets/img/edit-product.png" width="100%" alt="sample3">
 
 
                     <h3>Creat shiprocket</h3>
                     after getting orders and want deliver order using shiprocket you have to create shiprockt order
-                    <br> Go to edit order in you panel there you can select orders items which you add on one parcel
-                    after this click on create shiprocket order button then add diamensions of parcel here and then
-                    click on create oder.
+                    <br> Go to edit order in you panel there you can select orders items which you add on one parcel after this click on create shiprocket order button then add diamensions of parcel here and then click on create oder.
                     <img class="bordered" src="assets/img/create-ordeer.png" width="100%" alt="sample3">
 
                     <h3>Generate AWB</h3>
-                    After creating order you have to generate AWB(its unique number generated by shiprocket help to find
-                    your order quicky) for your order
+                    After creating order you have to generate AWB(its unique number generated by shiprocket help to find your order quicky) for your order
                     <br>after creating order you can see there button name with awb click on it .
                     <img class="bordered" src="assets/img/awb.png" width="100%" alt="sample3">
 
                     <h3>Send pickup request</h3>
-                    after creating order you have to send pickup request to so currier company will pickup order from
-                    you and deliver to customers.
+                    after creating order you have to send pickup request to so currier company will pickup order from you and deliver to customers.
                     <br>so you can send pickup request like this ;
                     <img class="bordered" src="assets/img/send-pickup-request.png" width="100%" alt="sample3">
                     <br>
@@ -464,14 +432,17 @@
                     With some reason if you have to cancel order you can cancel your order like this:
                     <img class="bordered" src="assets/img/cancel order.png" width="100%" alt="sample3">
 
+                    <h3>Address is not allowed error occurred</h3>
+                    Rename Shiprocket webhook URL like this:
+                    <p>Existing URL : https://eCart_multi_vendor/webhook.php </p>
+                    <p>Rename URL : https://eCart_multi_vendor/new_webhook.php</p>
+                    <img class="bordered" src="assets/img/shiprocket_webhook_url.png" width="100%" alt="sample3">
 
                 </section>
                 <section>
                     <h2 id="support">Support</h2>
-                    If you are facing any technical issues or challanges while using our system. You can contact us on
-                    skype.
-                    <br />We are available for technical support from 9.00AM to 6.00PM Indian Standard Time Monday to
-                    Friday.
+                    If you are facing any technical issues or challanges while using our system. You can contact us on skype.
+                    <br />We are available for technical support from 9.00AM to 6.00PM Indian Standard Time Monday to Friday.
                     <br /><a href='skype:live:.cid.b822baf8712d4320'>Drop a Message on Skype</a>
                 </section>
 
@@ -481,9 +452,7 @@
                         <img class="bordered" src="assets/img/overview.png" alt="sample3">
                         <p>Sample image</p>
                     </div>
-                    <p style="color:#d34646;">The Above web page contains tabs on the left panel like
-                        Home,Orders,Sellers,Categories,Subcategories,Product,Customers,Send
-                        notifications,Transaction,System,Location,Reports,Web Pages and FAQs to manage the whole website
+                    <p style="color:#d34646;">The Above web page contains tabs on the left panel like Home,Orders,Sellers,Categories,Subcategories,Product,Customers,Send notifications,Transaction,System,Location,Reports,Web Pages and FAQs to manage the whole website
                     </p>
                     <h3 id="subtitle1">Home</h3>
                     <div class="promo">
@@ -523,8 +492,7 @@
                         <li>View Order</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/view_tab.png" alt="sample3"> To View the Order
-                                details
+                                <img class="bordered" src="assets/img/view_tab.png" alt="sample3"> To View the Order details
                             </li>
                         </ul>
                         <li>Delete Order</li>
@@ -545,43 +513,37 @@
                         <li>Search Product Category details</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the
-                                Product Name or Any other Detail
+                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the Product Name or Any other Detail
                             </li>
                         </ul>
                         <li>Refresh Product list</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh Product
-                                List
+                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh Product List
                             </li>
                         </ul>
                         <li>Filters</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the
-                                Product Category details according to the criteria
+                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the Product Category details according to the criteria
                             </li>
                         </ul>
                         <li>View Subcategories</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/view_subcategory.png" alt="sample3"> Used to view
-                                the subcategories of category
+                                <img class="bordered" src="assets/img/view_subcategory.png" alt="sample3"> Used to view the subcategories of category
                             </li>
                         </ul>
                         <li>Edit Category</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the
-                                Product Category details
+                                <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the Product Category details
                             </li>
                         </ul>
                         <li>Delete Category</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the
-                                Product Category details
+                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the Product Category details
                             </li>
                         </ul>
                     </ul>
@@ -592,15 +554,13 @@
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_cat_tab.png" alt="sample3">
                     </div>
-                    <li style="color:green;" type="circle">After Clicking to the New Category tab a new window will be
-                        displayed as follows</li>
+                    <li style="color:green;" type="circle">After Clicking to the New Category tab a new window will be displayed as follows</li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_cat2_tab.png" alt="sample3">
                     </div>
                     <ol>
                         <li style="color:#d34646;" type="">In Category Name field Enter the Name of the Category.</li>
-                        <li style="color:#d34646;" type="">In Category Subtitle field Enter the Subtitles of the
-                            Category.
+                        <li style="color:#d34646;" type="">In Category Subtitle field Enter the Subtitles of the Category.
                         </li>
                         <li style="color:#d34646;" type="">At Last Choose The Image For The Category.</li>
                         <li style="color:#d34646;" type="">Click Add to add the Category</li>
@@ -610,8 +570,7 @@
                         <p style="color:green;">The Grocery Category Added Successfully</p>
                     </div>
                     <h2>Step 2:Delete Category from the List</h2>
-                    <p> For Deleting category we need to use<img src="assets/img/delete1_tab.png"> as explained above
-                        under Actions category.</p>
+                    <p> For Deleting category we need to use<img src="assets/img/delete1_tab.png"> as explained above under Actions category.</p>
                     <h3 id="subcategories">Sub categories</h3>
                     <div class="promo">
                         <img class="bordered" src="assets/img/subcategories.png" alt="sample3">
@@ -622,43 +581,37 @@
                         <li>Search Subcategory details</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the
-                                Subcategory Name or Any other Detail
+                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the Subcategory Name or Any other Detail
                             </li>
                         </ul>
                         <li>Refresh Product list</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh
-                                Subcategory List
+                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh Subcategory List
                             </li>
                         </ul>
                         <li>Filters</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the
-                                Subcategory details according to the criteria
+                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the Subcategory details according to the criteria
                             </li>
                         </ul>
                         <li>View Products</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/view_product.png" alt="sample3"> Used to view the
-                                products of subcategory
+                                <img class="bordered" src="assets/img/view_product.png" alt="sample3"> Used to view the products of subcategory
                             </li>
                         </ul>
                         <li>Edit subcategory</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the
-                                Subcategory details
+                                <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the Subcategory details
                             </li>
                         </ul>
                         <li>Delete subcategory</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the
-                                subcategory details
+                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the subcategory details
                             </li>
                         </ul>
                     </ul>
@@ -669,16 +622,14 @@
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_subcat_tab.png" alt="sample3">
                     </div>
-                    <li style="color:green;" type="circle">After Clicking to the New Category tab a new window will be
-                        displayed as follows</li>
+                    <li style="color:green;" type="circle">After Clicking to the New Category tab a new window will be displayed as follows</li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_subcat2_tab.png" alt="sample3">
                     </div>
                     <ol>
                         <li style="color:#d34646;" type="">In Main Category field select category.</li>
                         <li style="color:#d34646;" type="">In Sub category name enter name of subcategory.</li>
-                        <li style="color:#d34646;" type="">In subcategory Subtitle field Enter the Subtitles of the
-                            subategory.
+                        <li style="color:#d34646;" type="">In subcategory Subtitle field Enter the Subtitles of the subategory.
                         </li>
                         <li style="color:#d34646;" type="">At Last Choose The Image For The subcategory.</li>
                         <li style="color:#d34646;" type="">Click Add to Add the Subcategory or clear to clear the form.
@@ -689,8 +640,7 @@
                         <p style="color:green;">The Green subcategory Added Successfully</p>
                     </div>
                     <h2>Step 2:Delete subcategory from the List</h2>
-                    <p> For Deleting subcategory we need to use<img src="assets/img/delete1_tab.png"> as explained above
-                        under Actions category.</p>
+                    <p> For Deleting subcategory we need to use<img src="assets/img/delete1_tab.png"> as explained above under Actions category.</p>
 
                     <!-- seller starts -->
                     <h3 id="sellers">Sellers</h3>
@@ -703,58 +653,50 @@
                         <li>Search Subcategory details</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the
-                                Subcategory Name or Any other Detail
+                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the Subcategory Name or Any other Detail
                             </li>
                         </ul>
                         <li>Refresh Product list</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh
-                                Subcategory List
+                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh Subcategory List
                             </li>
                         </ul>
                         <li>Filters</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the
-                                Seller details according to the criteria
+                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the Seller details according to the criteria
                             </li>
                         </ul>
                         <li>View Seller Products</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/view_seller_product.png" alt="sample3"> Used to
-                                view the products of seller
+                                <img class="bordered" src="assets/img/view_seller_product.png" alt="sample3"> Used to view the products of seller
                             </li>
                         </ul>
                         <li>View Seller Orders</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/view_seller_orders.png" alt="sample3"> Used to
-                                view the orders of seller
+                                <img class="bordered" src="assets/img/view_seller_orders.png" alt="sample3"> Used to view the orders of seller
                             </li>
                         </ul>
                         <li>Edit seller</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the
-                                Seller details
+                                <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the Seller details
                                 <!--  here i have reached -->
                             </li>
                         </ul>
                         <li>Remove Seller Temporary</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/remove-seller.png" alt="sample3"> Used to remove
-                                seller Temporary
+                                <img class="bordered" src="assets/img/remove-seller.png" alt="sample3"> Used to remove seller Temporary
                             </li>
                         </ul>
                         <li>Delete Seller Permanently</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/delete-seller.png" alt="sample3"> Used to delete
-                                seller permanently
+                                <img class="bordered" src="assets/img/delete-seller.png" alt="sample3"> Used to delete seller permanently
                             </li>
                         </ul>
                     </ul>
@@ -765,14 +707,12 @@
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_seller_tab.png" alt="sample3">
                     </div>
-                    <li style="color:green;" type="circle">After Clicking to the New Seller tab a new window will be
-                        displayed as follows</li>
+                    <li style="color:green;" type="circle">After Clicking to the New Seller tab a new window will be displayed as follows</li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_seller2_tab.png" alt="sample3">
                     </div>
                     <ol>
-                        <li style="color:#d34646;" type="">Fill all the informations of seller as you see in above
-                            image.
+                        <li style="color:#d34646;" type="">Fill all the informations of seller as you see in above image.
                         </li>
 
                     </ol>
@@ -782,14 +722,11 @@
                     <ol>
                         <li style="color:#d34646;" type="">Here you will see three fields.</li>
                         <ol type="A">
-                            <li style="color:#d34646;"><b>Require Product's Approval </b>- Here you can give permission
-                                for direct publish of that seller's products.</li>
-                            <li style="color:#d34646;"><b>View Customer's Details? </b>- Here you can give permission
-                                for customer details will show to seller or not</li>
+                            <li style="color:#d34646;"><b>Require Product's Approval </b>- Here you can give permission for direct publish of that seller's products.</li>
+                            <li style="color:#d34646;"><b>View Customer's Details? </b>- Here you can give permission for customer details will show to seller or not</li>
                             <li style="color:#d34646;"><b>Status </b> - Here you can change the status of seller.</li>
                         </ol>
-                        <li style="color:#d34646;" type="">Click <b>Add</b> to Add the Seller or <b>Clear</b> to clear
-                            the form.
+                        <li style="color:#d34646;" type="">Click <b>Add</b> to Add the Seller or <b>Clear</b> to clear the form.
                         </li>
                     </ol>
                     <div class="promo">
@@ -798,8 +735,7 @@
                     </div>
                     <h2>Step 2:Delete Seller OR Remove Seller from the List</h2>
                     <p> For Remove Seller, we need to use <span style="color:#014c8d;">Remove</span> Button.</p>
-                    <p> For Delete Seller, we need to use <span style="color:#014c8d;">Permanently Delete</span> Button
-                        as explained above under Actions category.</p>
+                    <p> For Delete Seller, we need to use <span style="color:#014c8d;">Permanently Delete</span> Button as explained above under Actions category.</p>
                     <!-- seller ends -->
                     <h2 id="product">Product Panel</h2>
                     <div class="promo">
@@ -811,35 +747,30 @@
                         <li>View Product</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/view1_tab.png" alt="sample3"> To View the Product
-                                details
+                                <img class="bordered" src="assets/img/view1_tab.png" alt="sample3"> To View the Product details
                             </li>
                         </ul>
                         <li>Edit Product</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> To Edit the Product
-                                Details
+                                <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> To Edit the Product Details
                             </li>
                         </ul>
                         <li>Delete Product</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> To Delete the
-                                Product
+                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> To Delete the Product
                             </li>
                         </ul>
                         <li>Activate/Deactivate Product</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/product-status.png" alt="sample3"> To
-                                Activate/Deactivate the Product by clicking on eye icon
+                                <img class="bordered" src="assets/img/product-status.png" alt="sample3"> To Activate/Deactivate the Product by clicking on eye icon
                             </li>
                         </ul>
                     </ul>
                     <br>
-                    <p style="color:#d34646;">By clicking <img class="bordered" src="assets/img/view1_tab.png"
-                            alt="sample3"> all available variants of product will be displayed like below.</p>
+                    <p style="color:#d34646;">By clicking <img class="bordered" src="assets/img/view1_tab.png" alt="sample3"> all available variants of product will be displayed like below.</p>
                     <div class="promo">
                         <img class="bordered" src="assets/img/product_variants.png" alt="sample3">
                     </div>
@@ -849,8 +780,7 @@
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_product_tab.png" alt="sample3">
                     </div>
-                    <li style="color:green;" type="circle">After Clicking to the New Product tab a new window will be
-                        displayed as follows</li>
+                    <li style="color:green;" type="circle">After Clicking to the New Product tab a new window will be displayed as follows</li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/add_product_tab.png" alt="sample3">
                     </div>
@@ -861,9 +791,7 @@
                         <li style="color:#d34646;" type="">Select status available or sold out.</li>
                         <li style="color:#d34646;" type="">Select category of product.</li>
                         <li style="color:#d34646;" type="">Select subcategory of product.</li>
-                        <li style="color:#d34646;" type="">Select Delivery Places type for pincodes and select pincodes
-                            according to that type. For example you want to select included pincodes in which your
-                            Specific product can deliverable.</li>
+                        <li style="color:#d34646;" type="">Select Delivery Places type for pincodes and select pincodes according to that type. For example you want to select included pincodes in which your Specific product can deliverable.</li>
                         <li style="color:#d34646;" type="">Choose main image and other images for product.</li>
                         <li style="color:#d34646;" type="">Add description about product.</li>
                         <li style="color:#d34646;" type="">Click add to add product or clear to clear the form.</li>
@@ -905,29 +833,25 @@
                         <li>Search slider image details</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the
-                                slider related Detail
+                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the slider related Detail
                             </li>
                         </ul>
                         <li>Refresh slider list</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh slider
-                                List
+                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh slider List
                             </li>
                         </ul>
                         <li>Filters</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the
-                                slider details according to the criteria
+                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the slider details according to the criteria
                             </li>
                         </ul>
                         <li>Delete slider</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the
-                                slider image.
+                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the slider image.
                             </li>
                         </ul>
                     </ul>
@@ -949,8 +873,7 @@
                             Choose one or more products.
                         </li>
                         <li style="color:#d34646;">
-                            Click on <img src="assets/img/create.png"> to create featured section or <img
-                                src="assets/img/reset.png"> to reset form.
+                            Click on <img src="assets/img/create.png"> to create featured section or <img src="assets/img/reset.png"> to reset form.
                         </li>
                     </ul>
                     <div class="promo">
@@ -962,29 +885,25 @@
                         <li>Search section details</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the
-                                section related Detail
+                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the section related Detail
                             </li>
                         </ul>
                         <li>Refresh section list</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh section
-                                List
+                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh section List
                             </li>
                         </ul>
                         <li>Filters</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the
-                                section details according to the criteria
+                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the section details according to the criteria
                             </li>
                         </ul>
                         <li>Delete section</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the
-                                section.
+                                <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the section.
                             </li>
                         </ul>
                     </ul>
@@ -998,22 +917,19 @@
                         <li>Search Customer</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the
-                                Customer Name or Any other Detail
+                                <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> To search the Customer Name or Any other Detail
                             </li>
                         </ul>
                         <li>Refresh Customer list</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh
-                                Customer List
+                                <img class="bordered" src="assets/img/refresh_tab.png" alt="sample3"> To Refresh Customer List
                             </li>
                         </ul>
                         <li>Filters</li>
                         <ul>
                             <li style="color:grey;">
-                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the
-                                Customer details according to the criteria
+                                <img class="bordered" src="assets/img/filter_tab.png" alt="sample3"> Used to filter the Customer details according to the criteria
                             </li>
                         </ul>
                     </ul>
@@ -1037,8 +953,7 @@
                         <p>All Transaction's list</p>
                     </div>
                     <h3 id="system">System</h3>
-                    <li style="color:green;" type="circle">The System Tab contains an Sub tabs like Store
-                        Settings,Notification Settings,Contact Us and Privacy Policy. </li>
+                    <li style="color:green;" type="circle">The System Tab contains an Sub tabs like Store Settings,Notification Settings,Contact Us and Privacy Policy. </li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/sys_store.png" alt="sample3">
                     </div>
@@ -1049,34 +964,23 @@
                         <img class="bordered" src="assets/img/store_settings.png" alt="sample3">
                     </div>
                     <ul>
-                        <li type="circle" style="color:#d34646;">From Here The System's Settings can be Updated as per
-                            requirements
+                        <li type="circle" style="color:#d34646;">From Here The System's Settings can be Updated as per requirements
                         </li>
                         <ul>
                             <li type="disc">Fields:</li>
                             <li><span style="color:#1a63b8;">App Name</span> : From Here we can update the App name</li>
                             <li><span style="color:#1a63b8;">Logo</span> : From Here we can update the App Logo</li>
-                            <li><span style="color:#1a63b8;">Store Currency</span> : From Here we can update the Store
-                                Currency
+                            <li><span style="color:#1a63b8;">Store Currency</span> : From Here we can update the Store Currency
                             </li>
                             <li><span style="color:#1a63b8;">Tax</span> : From Here we can update the Tax</li>
-                            <li><span style="color:#1a63b8;">Delivery Charge Amount</span> : From Here we can update the
-                                Delivery Charge Amount</li>
-                            <li><span style="color:#1a63b8;">Minimum Amount For free Delivery</span> : From Here we can
-                                update the Minimum Amount For free Delivery</li>
-                            <li><span style="color:#1a63b8;">Store Address Settings</span> : From Here we can update
-                                Store Address</li>
-                            <li><span style="color:#1a63b8;">Area wise delivery charge</span> : From Here we can enable
-                                or disable the Area wise delivery charge</li>
-                            <li><span style="color:#1a63b8;">Refer & Earn System</span> : From Here we can set the
-                                details for Refer & Earn System</li>
-                            <li><span style="color:#1a63b8;">From eMail ID</span> : <img src="assets/img/from_email.png"
-                                    width="200px"> All Emails in the system will be sent from this email id </li>
-                            <li><span style="color:#1a63b8;">Reply To eMail ID</span> :<img
-                                    src="assets/img/reply_email.png" width="200px"> Customer who receives the email will
-                                be able to reply on this email id</li>
-                            <li><span style="color:#1a63b8;">SMTP Mail Settings</span> : We have two email setting
-                                following is SMTP email settings</li>
+                            <li><span style="color:#1a63b8;">Delivery Charge Amount</span> : From Here we can update the Delivery Charge Amount</li>
+                            <li><span style="color:#1a63b8;">Minimum Amount For free Delivery</span> : From Here we can update the Minimum Amount For free Delivery</li>
+                            <li><span style="color:#1a63b8;">Store Address Settings</span> : From Here we can update Store Address</li>
+                            <li><span style="color:#1a63b8;">Area wise delivery charge</span> : From Here we can enable or disable the Area wise delivery charge</li>
+                            <li><span style="color:#1a63b8;">Refer & Earn System</span> : From Here we can set the details for Refer & Earn System</li>
+                            <li><span style="color:#1a63b8;">From eMail ID</span> : <img src="assets/img/from_email.png" width="200px"> All Emails in the system will be sent from this email id </li>
+                            <li><span style="color:#1a63b8;">Reply To eMail ID</span> :<img src="assets/img/reply_email.png" width="200px"> Customer who receives the email will be able to reply on this email id</li>
+                            <li><span style="color:#1a63b8;">SMTP Mail Settings</span> : We have two email setting following is SMTP email settings</li>
                             <li><span style="color:#1a63b8;"><img src="assets/img/smtp_settings.png"
                                         style="max-width:100%"> </li>
 
@@ -1092,10 +996,8 @@
                         </ul>
                         <li>Cron job is set from your server panel</li>
                         <ul>
-                            <li><span style="color:#1a63b8;">Common Settings</span> : From Here you have to set "Once
-                                per day"</li>
-                            <li><span style="color:#1a63b8;">Command</span> : From Here you have to set your path(server
-                                path) for file <span>https://your_panel.com/update-seller-commission.php</span></li>
+                            <li><span style="color:#1a63b8;">Common Settings</span> : From Here you have to set "Once per day"</li>
+                            <li><span style="color:#1a63b8;">Command</span> : From Here you have to set your path(server path) for file <span>https://your_panel.com/update-seller-commission.php</span></li>
                         </ul>
                     </ul>
 
@@ -1142,20 +1044,16 @@
                         </ul>
                     </ul>
                     <h3 id="notification">Notification Settings</h3>
-                    <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Notification
-                        Settings </li>
+                    <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Notification Settings </li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/notification_setting.png" alt="sample3">
                     </div>
                     <ul>
-                        <li type="circle" style="color:#d34646;">From Here The Notification Settings can be Updated as
-                            per requirements</li>
+                        <li type="circle" style="color:#d34646;">From Here The Notification Settings can be Updated as per requirements</li>
                         <ul>
-                            <li><span style="color:#1a63b8;">FCM Server Key</span> : From Here we can update the FCM
-                                Server Key</li>
+                            <li><span style="color:#1a63b8;">FCM Server Key</span> : From Here we can update the FCM Server Key</li>
                         </ul>
-                        <li type="circle" style="color:red">Click <img src="assets/img/update_btn.png" /> Button To
-                            Update Current FCM Server Key.</li>
+                        <li type="circle" style="color:red">Click <img src="assets/img/update_btn.png" /> Button To Update Current FCM Server Key.</li>
                     </ul>
                     <h3 id="contact">Contact Us</h3>
                     <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Contact Us </li>
@@ -1163,10 +1061,8 @@
                         <img class="bordered" src="assets/img/contact_us.png" alt="sample3">
                     </div>
                     <ul>
-                        <li type="circle" style="color:#d34646;">From here the contact us information can be updated as
-                            per requirements</li>
-                        <li type="circle" style="color:red">Click <img src="assets/img/update_btn.png" /> button to
-                            update contact us information.</li>
+                        <li type="circle" style="color:#d34646;">From here the contact us information can be updated as per requirements</li>
+                        <li type="circle" style="color:red">Click <img src="assets/img/update_btn.png" /> button to update contact us information.</li>
                     </ul>
                     <h3 id="privacy_policy">Privacy Policy</h3>
                     <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Privacy Policy
@@ -1175,10 +1071,8 @@
                         <img class="bordered" src="assets/img/privacy_policy.png" alt="sample3">
                     </div>
                     <ul>
-                        <li type="circle" style="color:#d34646;">From here the privacy policy and terms and conditions
-                            can be updated as per requirements</li>
-                        <li type="circle" style="color:red">Click <img src="assets/img/update_btn.png" /> button to
-                            update information.</li>
+                        <li type="circle" style="color:#d34646;">From here the privacy policy and terms and conditions can be updated as per requirements</li>
+                        <li type="circle" style="color:red">Click <img src="assets/img/update_btn.png" /> button to update information.</li>
                     </ul>
                     <h3 id="location">Location</h3>
                     <li style="color:green;" type="circle">
@@ -1201,22 +1095,19 @@
                     <li>Edit </li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the Pincode
-                            details
+                            <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the Pincode details
                         </li>
                     </ul>
                     <li>Delete </li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the
-                            Specific Pincode
+                            <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the Specific Pincode
                         </li>
                     </ul>
                     <li>Search Pincode</li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> Used to search the
-                            Specific Pincode
+                            <img class="bordered" src="assets/img/search_tab.png" alt="sample3"> Used to search the Specific Pincode
                         </li>
                     </ul>
                     <h2>Adding New Pincodes in the Pincode List</h2>
@@ -1224,15 +1115,13 @@
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_city.png" alt="sample3">
                     </div>
-                    <li style="color:green;" type="circle">After Clicking to the New Pincode tab a new window will be
-                        displayed as follows</li>
+                    <li style="color:green;" type="circle">After Clicking to the New Pincode tab a new window will be displayed as follows</li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_city2.png" alt="sample3">
                     </div>
                     <ol>
                         <li style="color:#d34646;" type="">In Pincode field Enter the Pincode of the City.</li>
-                        <li style="color:#d34646;" type="">In City field Enter the city name of the pincode you have
-                            entered above.</li>
+                        <li style="color:#d34646;" type="">In City field Enter the city name of the pincode you have entered above.</li>
                         <li style="color:#d34646;" type="">Click Add button to Add the Pincode</li>
                     </ol>
                     <h3 id="area">Area</h3>
@@ -1244,22 +1133,19 @@
                     <li>Search </li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/search_area.png" alt="sample3"> This feature is used
-                            to search areas according to Pincode
+                            <img class="bordered" src="assets/img/search_area.png" alt="sample3"> This feature is used to search areas according to Pincode
                         </li>
                     </ul>
                     <li>Edit </li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the Area
-                            details
+                            <img class="bordered" src="assets/img/edit_tab.png" alt="sample3"> Used to Edit the Area details
                         </li>
                     </ul>
                     <li>Delete </li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the
-                            Specific Area
+                            <img class="bordered" src="assets/img/delete1_tab.png" alt="sample3"> Used to Delete the Specific Area
                         </li>
                     </ul>
                     <h2>Adding New Area in the List</h2>
@@ -1267,18 +1153,15 @@
                     <div class="promo">
                         <img class="bordered" src="assets/img/new_area.png" alt="sample3">
                     </div>
-                    <li style="color:green;" type="circle">After Clicking to the New area tab a new window will be
-                        displayed as follows</li>
+                    <li style="color:green;" type="circle">After Clicking to the New area tab a new window will be displayed as follows</li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/add_area_tab.png" alt="sample3">
                     </div>
                     <ol>
                         <li style="color:#d34646;" type="">In Pincode field select the pincode of the Area.</li>
                         <li style="color:#d34646;" type="">In Area Name Field Enter the Area Name .</li>
-                        <li style="color:#d34646;" type="">In <b>Minimum Free Delivery Order Amount</b> field Enter the
-                            minimum amount for free delivery order.</li>
-                        <li style="color:#d34646;" type="">In <b>Delivery Charges</b> field Enter the amount for
-                            delivery charge for order.</li>
+                        <li style="color:#d34646;" type="">In <b>Minimum Free Delivery Order Amount</b> field Enter the minimum amount for free delivery order.</li>
+                        <li style="color:#d34646;" type="">In <b>Delivery Charges</b> field Enter the amount for delivery charge for order.</li>
                         <li style="color:#d34646;" type="">Click Update to Add </li>
                     </ol>
                     <h1 id="report">Report</h1>
@@ -1302,15 +1185,13 @@
                     <li>Search Product Sales Report by specific date</li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/search_report.png" alt="sample3" style="width:200px">
-                            This feature is used to search Product Sales report data between dates specified by the user
+                            <img class="bordered" src="assets/img/search_report.png" alt="sample3" style="width:200px"> This feature is used to search Product Sales report data between dates specified by the user
                         </li>
                     </ul>
                     <li>Search Product Sales Report Data</li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/search_tab.png" alt="sample3" style="width:200px">
-                            This feature is used to search Product Sales Report data
+                            <img class="bordered" src="assets/img/search_tab.png" alt="sample3" style="width:200px"> This feature is used to search Product Sales Report data
                         </li>
                     </ul>
                     <h1 id="inc_rep">Sales Report</h1>
@@ -1322,31 +1203,25 @@
                     <li>Search Product Sales Report by specific date</li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/search_report.png" alt="sample3" style="width:200px">
-                            This feature is used to search Sales report data between dates specified by the user
+                            <img class="bordered" src="assets/img/search_report.png" alt="sample3" style="width:200px"> This feature is used to search Sales report data between dates specified by the user
                         </li>
                     </ul>
                     <li>Search Sales Report by seller</li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/filter_product2.png" alt="sample3"
-                                style="width:200px"> This feature is used to search Sales data between dates specified
-                            by the user
+                            <img class="bordered" src="assets/img/filter_product2.png" alt="sample3" style="width:200px"> This feature is used to search Sales data between dates specified by the user
                         </li>
                     </ul>
                     <li>Search Sales Report by Category</li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/filter_product1.png" alt="sample3"
-                                style="width:200px"> This feature is used to search invoice data between dates specified
-                            by the user
+                            <img class="bordered" src="assets/img/filter_product1.png" alt="sample3" style="width:200px"> This feature is used to search invoice data between dates specified by the user
                         </li>
                     </ul>
                     <li>Search Invoice Report Data</li>
                     <ul>
                         <li style="color:grey;">
-                            <img class="bordered" src="assets/img/search_tab.png" alt="sample3" style="width:200px">
-                            This feature is used to search Invoice report data
+                            <img class="bordered" src="assets/img/search_tab.png" alt="sample3" style="width:200px"> This feature is used to search Invoice report data
                         </li>
                     </ul>
                     <h1 id="web_page">New Offers For Customers</h1>
@@ -1354,8 +1229,7 @@
                         <img class="bordered" src="assets/img/offers.png" alt="sample3">
                         <p>Sample Image</p>
                     </div>
-                    <p>To add and delete new offers for the customer as per requirement. customers can see that offers
-                        in app</p>
+                    <p>To add and delete new offers for the customer as per requirement. customers can see that offers in app</p>
 
 
                     <h1 id="faq">FAQ</h1>
@@ -1375,8 +1249,7 @@
                         <li>
                             Answer
                             <ul>
-                                <li type="disc"><img src="assets/img/ans_faq.png"> Used to Answer the Specified
-                                    Questions
+                                <li type="disc"><img src="assets/img/ans_faq.png"> Used to Answer the Specified Questions
                                 </li>
                             </ul>
                         </li>
@@ -1387,8 +1260,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <p style="color:#d34646;">To add new faq enter question and it's answer in form and hit <img
-                            src="assets/img/plus.png"> button as below.</p>
+                    <p style="color:#d34646;">To add new faq enter question and it's answer in form and hit <img src="assets/img/plus.png"> button as below.</p>
                     <div class="promo">
                         <img class="bordered" src="assets/img/add_query.png" alt="sample3">
                         <p>Sample Image</p>
@@ -1403,8 +1275,7 @@
                     <li style="color:green;" type="circle">
                         There are mainly three types of system users
                         <ol>
-                            <li>Super Admin : Can create and update new system users. super admin have no any
-                                restrictions
+                            <li>Super Admin : Can create and update new system users. super admin have no any restrictions
                             </li>
                             <li>Admin : Can create and update system users.</li>
                             <li>Editor : Does't have permission to create or update system users.</li>
@@ -1441,8 +1312,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <ul class="footer-menu">
-                        <li><a href="https://codecanyon.net/item/city-ecommerce-app/22015911"
-                                target="_blank">Changelog</a></li>
+                        <li><a href="https://codecanyon.net/item/city-ecommerce-app/22015911" target="_blank">Changelog</a></li>
                         <li><a href="https://wrteam.in" target='_blank'>Contact us</a></li>
                     </ul>
                 </div>
