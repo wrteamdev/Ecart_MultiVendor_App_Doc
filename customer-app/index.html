@@ -218,46 +218,50 @@
 									<div class="section_bdr"></div>
 								</div>
 							</section>
-
 							<section>
 								<h4>Add or replace google-services.json files from firebase to android code</h4>
 								<br /><img src="images/google_json1.png"></a><br />
 								<br /><img src="images/google_json2.png"></a><br />
 								<br /><img src="images/google_json3.png"></a><br />
 								<br /><img src="images/google_json4.png"></a><br />
-								<h4>Note: </h4>
-								<li>When we upadte Application on playstore we have to Add Signature SHA1 and SHA256 in
-									Firebase setting.Here ispath where you can get SHA1 and SHA256 from PlayConsole.
-								</li>
-								<br /><img src="images/otp_sha_3.png"></a><br />
-								<li><b>Note : </b></li>
-								<li>if you not received OTP check points is aready done or not.</li>
-								<li>1. Enabled phone signing in firebase?</li>
-								<li>2. Added SHA1 and SHA256 key in firebase project setting?</li>
-								<li>3. Added google-service.json file in android project.</li>
-								<li>4. package name should be same in firebase and android.</li>
-								<li>5. change application id as package name in build,gradle file ?</li>
-								<li>5. Rebuild Project and installl new apk.</li>
-								<h2 style="color:red;"
-									;>Important Note For OTP Issue</h2>
-								<li>it's compulsory to follow these steps otherwise OTP will not work properly</li>
+								<br>
+								<h2>It's compulsory to follow these steps otherwise OTP will not work properly</h2>
 								<ol>
-									<li><a href="#"
-											id="appname-link"
-											class="active">Add sha1 and sha256 in firebase from android studio if its
-											debug apk.<br>OR<br>Add sha1 and sha256 in firebase from playconsole if its
-											release apk.</a></li>
-									<li><a href="#"
-											id="appname-link"
-											class="active">Enable device verification from firebase (Documentation is
-											there).</a></li>
-									<li><a href="#"
-											id="appname-link"
-											class="active">Add json file new downloaded after add sha1,sha256 and enable
-											device verification.</a></li>
-									<li><a href="#"
-											id="appname-link"
-											class="active">Again create/generate app and check.</a></li>
+									<li>If its debug apk</li>
+									<ol>
+										<li>Add sha1 and sha256 in firebase from android studio</li>
+									</ol>
+								</ol>
+								<ol>
+									<li>If you are using playstore app,
+										<ol>
+											<li>Add sha1 and sha256 (Total 4 keys 2
+												sha1 and 2 sha256) in firebase from
+												playconsole (App signing key certificate [sha1 and sha256] and Upload
+												key certificate [sha1 and sha256]
+												)</li><br />
+											<img src="images/otp_sha_3.png"></a><br />
+										</ol>
+									</li>
+								</ol>
+								<ol>
+									<li>If play console app not available than do the follow the below steps</li>
+									<ol type="a">
+										<li>Download keystore explorer (Download link :
+											<a href="https://keystore-explorer.org">https://keystore-explorer.org</a>)
+										</li>
+										<li>Install keystore explorer</li>
+										<li>Open keystore via keystore explorer</li>
+										<li>Enter password</li>
+										<li>Click your keystore name</li>
+										<li>then you will get the sha1 & sha256 key add that both key in firebase
+										</li>
+									</ol>
+									<li>Enable device verification from firebase (Documentation is there)</li>
+									<li>Download json file from firebase and add it into android code (Documentation
+										is
+										there)</li>
+									<li>Run app from PlayStore/Android Studio or Create new APK and check</li>
 								</ol>
 							</section>
 							<section id="jwt">
@@ -268,6 +272,9 @@
 									<li>JWT Key is just like password you can create your own and it must be same in
 										Multivendor App, Multivendor Delivery Boy App as well as Php side.</li>
 									<li>Please check below given image.</li>
+									<a href="#jwt">
+										<img src="images/admin.png">
+									</a><br>
 									<div class="section_bdr"></div>
 								</div>
 							</section>
