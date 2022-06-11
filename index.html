@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>eCart - Multi Vendor eCommerce System
+    <title>eCart - Grocery, Food Delivery, Fruits & Vegetable store, Full Android Ecommerce App
     </title>
     <link rel="shortcut icon"
-        href="/images/favicon.svg"
+        href="images/app_icon.webp"
         type="image/x-icon">
-
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet"
         href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet"
@@ -19,6 +22,7 @@
         href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         .background {
             background-color: #131921;
@@ -46,6 +50,7 @@
             display: inline-block;
             position: relative;
             transition: 0.5s;
+            font-size: 1.4rem;
         }
 
         .button span:after {
@@ -65,47 +70,87 @@
             opacity: 1;
             right: 0;
         }
+
+        .logo {
+            height: 100px;
+            object-fit: contain;
+            max-width: 100%;
+        }
+
+        .center {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+
+        }
+
+        @media (max-width:480px) {
+            .header {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            h2 {
+                font-size: inherit;
+            }
+
+            .center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
     </style>
 </head>
 
 <body>
-
-    <!-- Header -->
-    <header class="w3-container w3-center background"
-        style="padding:128px 16px">
-        <img src="images/app_icon.webp"
-            height="200vh"
-            alt="eCart - Multi Vendor eCommerce System">
-
-        <h1 class="w3-margin">eCart - Multi Vendor eCommerce System
-        </h1>
-        <p class="w3-xlarge">Documentation</p>
-    </header>
-
-    <center>
-        <div style="margin: 50px;">
-
-            <button class="button"
-                style="vertical-align:middle"
-                onclick="location.href = 'customer-app/index.html';"><span>Customer App</span></button>
-
-            <button class="button"
-                style="vertical-align:middle"
-                onclick="location.href = 'seller-app/index.html';"><span>Seller App</span></button>
-
-            <button class="button"
-                style="vertical-align:middle"
-                onclick="location.href = 'delivery-boy-app/index.html';"><span>Delivery Boy App</span></button>
-
-            <button class="button"
-                style="vertical-align:middle"
-                onclick="location.href = 'admin-panel/index.html';"><span>Admin Panel</span></button>
-
-            <button class="button"
-                style="vertical-align:middle"
-                onclick="location.href = 'https://docs.google.com/document/d/e/2PACX-1vS2d80Q_CFB-i9nFBlAw50C36TiFLRacZMcDNxbg4dCEuU1ommKYDp5AH0USiMSlcglQWoAQ-y6Lygi/pub'"><span>FAQ</span></button>
+    <div class="background"
+        style="padding-top: 30px;">
+        <div class="container background">
+            <table class="table">
+                <thead>
+                    <tr class="header">
+                        <th><img src="images/app_icon.webp"
+                                class="logo"
+                                alt="eCart Multivendor App">
+                        </th>
+                        <th style="vertical-align: middle;">
+                            <h2 style="font-weight: bolder;">
+                                eCart Multivendor Documentation
+                            </h2>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
         </div>
-    </center>
+    </div>
+
+    <div class="center">
+        <button class="button"
+            style="vertical-align:middle"
+            onclick="location.href = 'customer-app/index.html';"><span>Customer App</span></button>
+
+        <button class="button"
+            style="vertical-align:middle"
+            onclick="location.href = 'seller-app/index.html';"><span>Seller App</span></button>
+
+        <button class="button"
+            style="vertical-align:middle"
+            onclick="location.href = 'delivery-boy-app/index.html';"><span>Delivery Boy App</span></button>
+
+        <button class="button"
+            style="vertical-align:middle"
+            onclick="location.href = 'admin-panel/index.html';"><span>Admin Panel</span></button>
+
+        <button class="button"
+            style="vertical-align:middle"
+            onclick="location.href = 'https://docs.google.com/document/d/e/2PACX-1vS2d80Q_CFB-i9nFBlAw50C36TiFLRacZMcDNxbg4dCEuU1ommKYDp5AH0USiMSlcglQWoAQ-y6Lygi/pub'"><span>FAQ</span></button>
+    </div>
+
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity">
@@ -125,6 +170,7 @@
             </script> <a href="https://wrteam.in/">WRTeam</a>
         </p>
     </footer>
+
 </body>
 
 </html>
